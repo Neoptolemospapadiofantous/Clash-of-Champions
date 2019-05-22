@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" type= "text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Web Game Development 2</title>
+    <!-- Load the Phaser game library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.2/phaser.min.js"></script>
+    <!-- Load the Socket.io networking library -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Some simple styles and fonts -->
+<style type="text/css">
+    body,html { /* Remove margins */
+        margin: 0px;
+        position: relative;
+
+    }
+    canvas { /* Center the canvas */
+        margin:auto;
+        /*border: 1px solid black;*/
+    }
+</style>
+  </head>
+  <body>
+    <!-- NAVIGATION ############################################### -->
+    <header>
+      <div class="ancho">
+        <!-- logo -->
+        <div class="logo">
+          <!-- logo icon -->
+          <p><img src="Images/logo.png" alt="logo" class="logo-pic" align="left"></p>
+          <!-- Game name-->
+          <p><a href="index.html">Clash of Champions</a></p>
+        </div>
+
+        <!-- nav -->
+        <nav>
+          <!-- nav list-->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="team.html">Our Team</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+    <!-- END NAVIGATION ############################################### -->
+
+    <!-- FIRST SECTION ############################################### -->
+    <section class="game">
+      <!-- Title -->
+      <h1>Game</h1>
+
+      <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        /* user: webgamesdevelopment2@gmail.com//
+          password: web-games-development-2 */
+        var config = {
+          apiKey: "AIzaSyDNzoDbLAILaCCoPZqceBOjOc0u7gXI5I0",
+          authDomain: "webgamedevelopment2.firebaseapp.com",
+          databaseURL: "https://webgamedevelopment2.firebaseio.com",
+          projectId: "webgamedevelopment2",
+          storageBucket: "webgamedevelopment2.appspot.com",
+          messagingSenderId: "458237857079"
+        };
+        firebase.initializeApp(config);
+      </script>
+      <script type="text/javascript" src="js/Boot.js"></script>
+      <script type="text/javascript" src="js/Preload.js"></script>
+      <script type="text/javascript" src="js/Title.js"></script>
+      <script type="text/javascript" src="js/Game.js"></script>
+      <script type="text/javascript" src="js/Main.js"></script>
+
+    </section>
+
+    <!-- END FIRST SECTION ############################################### -->
+
+
+
+
+  </body>
+</html>

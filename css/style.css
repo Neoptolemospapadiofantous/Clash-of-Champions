@@ -1,0 +1,681 @@
+/*
+
+	01. Generals Settings
+  02. Header
+  03. Home page
+  04. Game page
+  05. Design page
+  06. Team page
+  07. Footer
+
+*/
+
+/* 01. Generals Settings ================================================== */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 270px;
+}
+
+header{
+  width: 100%;
+  background: #1ABC9C;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index:1;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: justify;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 40px;
+}
+
+/* 02. Header ================================================== */
+
+.ancho {
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  z-index:2;
+}
+
+.logo {
+  width: 50%;
+  height: 50px;
+  float: left;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.logo p a{
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.logo-pic {
+  height: 50px;
+  width: 50px;
+}
+
+nav {
+  width: 50%;
+  height: 50px;
+  float: left;
+  text-align: right;
+  padding-top: 24px;
+  box-sizing: border-box;
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav ul li a{
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover{
+  color: #444;
+}
+
+/* 03. Home page ================================================== */
+
+.section1
+{
+  margin-top: 70px;
+  background: url('../Images/bg.jpg');
+  background-size: cover;
+  height: 90vh;
+  overflow: hidden;
+}
+
+@font-face
+{
+  font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Source Sans Pro ExtraLight"), local("SourceSansPro-ExtraLight"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGEzfSP8PFPIaW8d4wHl9LSw.woff") format("woff");
+}
+
+.section1 h1
+{
+  color: #FFF;
+}
+
+.section1 h2
+{
+  margin-top: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #FFF;
+}
+
+.section2{
+  background: #FFF;
+  text-align: center;
+}
+
+
+.section2 h1 {
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+.slidershow{
+  width: 50%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.slidershow ul{
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: cambio 10s infinite;
+}
+
+.slidershow li {
+  width: 100%;
+  list-style: none;
+}
+
+.slidershow img {
+  width: 100%;
+}
+
+@keyFrames cambio {
+  0% { margin-left: 0; }
+  28% { margin-left: 0; }
+
+  32% { margin-left: -100%; }
+  60% { margin-left: -100%; }
+
+  65% { margin-left: -200%; }
+  93% { margin-left: -200%; }
+
+  98%{ margin-left: 0%; }
+  100% { margin-left: 0%; }
+}
+
+.section3
+{
+  background: #f1f3f4;
+  text-align: center;
+  height: 90vh;
+
+}
+
+.section3 h1 {
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+
+/* 04. Game page ================================================== */
+
+.game{
+  margin-top: 70px;
+  text-align: center;
+}
+
+.game h1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+
+
+/* 05. Design page ================================================== */
+
+.section1Design{
+  margin-top: 70px;
+  background: url('../Images/bgDesign.jpeg');
+  background-size: cover;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.section1Design h1
+{
+
+  margin-top: 15%;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #FFF;
+
+}
+
+.section1Design h2
+{
+  position: static;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #FFF;
+
+}
+
+.welome{
+  text-align: center;
+  margin: 40px;
+}
+
+.welome h1{
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+.de img{
+  width: 300px;
+  height: 300px;
+}
+
+.de{
+  float: left;
+  width: calc(100% / 2);
+  overflow: hidden;
+  padding: 40px 0;
+  transition: 0.4s;
+}
+
+.de:hover{
+  background:  #566573  ;
+}
+
+
+.welome h1{
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+.controls{
+  text-align: center;
+}
+
+.controls h1{
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+
+
+.controls img{
+  width: 50%;
+  height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+.implementation{
+  text-align: center;
+}
+
+.implementation h1{
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+
+.Phaser{
+  text-align: center;
+}
+
+.Phaser h1{
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+.Phaser h2{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.Firebase{
+  text-align: center;
+}
+.Firebase h1{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+.Firebase h2{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.Socket{
+  text-align: center;
+}
+
+.Socket h1{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+.Socket h2{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.diagrams{
+  text-align: center;
+}
+
+.diagrams h1{
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+.acordionSection {
+    margin-top: 60px;
+    height: 65vh;
+    text-align: center;
+}
+
+.acordionSection h1{
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.accordion {
+    max-width: 990px;
+    background: rgba(0, 0, 0, 0.10);
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.feature {
+    position: relative;
+    height: 100%;
+    flex: 1;
+    background-position: left;
+    background-size: cover;
+    transition: .7s;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+.feature:hover{
+    flex: 3;
+    height: 400px;
+}
+.a1 {
+    background-image: url("../Images/UIdiagram.png");
+}
+.a2 {
+    background-image: url("../Images/PlayerActions.png");
+}
+.a3 {
+    background-image: url("../Images/CharacterStates.png");
+
+}
+
+.a4 {
+    background-image: url("../Images/logos.png");
+}
+p {
+    font-weight: normal;
+    font-family: 'Exo 2', sans-serif;
+}
+.text {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    padding: 10px;
+}
+.feature:hover .text{
+    opacity:1;
+}
+
+@media screen and (max-width: 800px){
+    .accordion {
+        flex-direction: column;
+        height: 700px;
+        box-shadow: none;
+    }
+    .box {
+        box-shadow: none;
+    }
+    .box:hover {
+        flex: 7;
+    }
+}
+
+
+.section4Design{
+  text-align: center;
+}
+
+.section4Design h1{
+  margin-top: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+
+.section4Design h2{
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+
+/* 06. Team page ================================================== */
+
+.teamSection{
+  margin-top: 70px;
+  background: #f1f1f1;
+  text-align: center;
+}
+.inner-width{
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 40px;
+  color: #333;
+  overflow: hidden;
+}
+.teamSection h1{
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  border-bottom-color: #1ABC9C;
+  padding-bottom: 10px;
+}
+.pe{
+  float: left;
+  width: calc(100% / 3);
+  overflow: hidden;
+  padding: 40px 0;
+  transition: 0.4s;
+}
+
+.pe:hover{
+  background: #ddd;
+}
+.pe img{
+  width: 120px;
+  height: 120px;
+}
+.p-name{
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+.p-des{
+  font-style: italic;
+  color: #3498db;
+}
+.p-sm{
+  margin-top: 12px;
+}
+.p-sm a{
+  margin: 0 4px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: 0.4s;
+}
+.p-sm a:hover{
+  transform: scale(1.3);
+}
+.p-sm a i{
+  color: #333;
+  line-height: 30px;
+}
+
+.p-reflection{
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+@media screen and (max-width:600px) {
+  .pe{
+    width: 100%;
+  }
+}
+
+/* 07. Footer ================================================== */
+
+footer {
+    background: #035848;
+    text-align: center;
+    position: absolute;
+    height: 250px;
+    bottom: 0 !important;
+    width: 100%;
+    color: #A47463;
+    font-size: 20px;
+  }
+
+.icon{
+  height: 50px;
+  width: 50px;
+}
+
+.container{
+  margin-top: 2%;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container .box{
+    position: relative;
+    width: 350px;
+    height: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,.2);
+    overflow: hidden;
+}
+.container .box:last-child{
+    border:none;
+}
+.container .box .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size:20px;
+    transition: .5s;
+}
+.container .box .icon .fa{
+    padding-right: 10px;
+    transition: .5s;
+}
+.container .box:hover .icon{
+    transform: translateY(-100%);
+}
+.container .box:hover .icon .fa{
+    transform: translateY(100px);
+    font-size: 80px;
+    opacity: .1;
+    transition-delay:.5s;
+    z-index: -1;
+}
+.container .box .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: .5s;
+    font-size: 20px;
+}
+.container .box:hover .details{
+    transform: translateY(0);
+}
